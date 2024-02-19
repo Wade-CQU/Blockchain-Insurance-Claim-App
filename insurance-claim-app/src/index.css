@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: darkslategray;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  letter-spacing: 3px;
+}
+
+.background-banner{
+  position: absolute;
+  top: 90px;
+  z-index: -10;
+  width: 100%;
+  height: 320px;
+  background: rgb(37,255,231);
+  background: linear-gradient(174deg, rgba(37,255,231,0.6) 0%, rgba(82,255,213,0.6) 45%, rgba(187,255,218,0.6) 100%);
+}
+
+.pagecard-container{
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  overflow: hidden;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  transition: all ease-in-out .1s;
+}
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0px 5px 10px lightgray;
+  border-radius: 20px;
+}
+
+.card-text{
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.form-container{
+  width: 600px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, .2) 0px 0px 5px 1px;
+}
+
+.claim-form label{
+  display: block;
+  text-align: left;
+}
+.form-container h2{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.form-field{
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 3px 10px;
+  width: 96%;
+  min-height: 30px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.form-container button{
+  width: 50%;
+  border: none;
+  height: 40px;
+  background: darkslategray;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.claim-list-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.claim-list-item:hover{
+  box-shadow: rgba(0, 0, 0, .2) 0px 0px 5px 1px;
+  cursor: pointer;
+}
+
+.claim-list-name{
+  font-weight: bold;
+}
+
+.claim-list-status{
+  padding: 5px;
+  color: white;
+  background-color: rgb(53, 185, 53);
+  border-radius: 5px;
+}
+
+.process-claim-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.process-claim-buttons *{
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.process-claim-buttons *:nth-child(1){
+  border: 2px solid red;
+  color: red;
+}
+.process-claim-buttons *:nth-child(1):hover{
+  background-color: rgb(255, 0, 0);
+  color: white;
+  box-shadow: rgba(0, 0, 0, .2) 0px 0px 5px 1px;
+}
+
+.process-claim-buttons *:nth-child(2){
+  border: 2px solid darkslategray;
+  color: darkslategray;
+}
+.process-claim-buttons *:nth-child(2):hover{
+  background-color: darkslategray;
+  color: white;
+  box-shadow: rgba(0, 0, 0, .2) 0px 0px 5px 1px;
+}
+
+.verify-claim-button{
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid darkslategray;
+  color: darkslategray;
+}
+
+.verify-claim-button:hover{
+  background-color: darkslategray;
+  color: white;
+  box-shadow: rgba(0, 0, 0, .2) 0px 0px 5px 1px;
+}
+
+.success-message{
+  font-size: 20px;
+  color: rgb(0, 211, 0);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
